@@ -13,9 +13,6 @@ using Planetscale.Data;
 using Microsoft.AspNetCore.Http;
 //using MySQL.Data.EntityFrameworkCore;
 //using Myql.Data.EntityFrameworkCore.Extensions;
-using MySql.EntityFrameworkCore;
-using MySql.EntityFrameworkCore.DataAnnotations;
-using MySql.EntityFrameworkCore.Extensions;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System.Threading;
 
@@ -40,12 +37,12 @@ namespace planetscale
             if (Environment.IsDevelopment())
             {
                 services.AddDbContext<PlanetscaleContext>(options =>
-                    options.UseMySQL(Configuration.GetConnectionString("Development")));
+                    options.UseMySql(Configuration.GetConnectionString("Development")));
             }
             else
             {
                 services.AddDbContext<PlanetscaleContext>(options =>
-                    options.UseMySQL(Configuration.GetConnectionString("Production")));
+                    options.UseMySql(Configuration.GetConnectionString("Production")));
             }
         }
 

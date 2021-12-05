@@ -7,28 +7,9 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.21" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.21">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="MySql.EntityFrameworkCore" Version="5.0.8" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.2.7" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="Modals\" />
-    <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
-    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
-    <None Remove="Microsoft.EntityFrameworkCore.Tools" />
-    <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
-    <None Remove="MySqlConnector" />
-    <None Remove="GraphQL" />
-    <None Remove="MySql.Data.EntityFrameworkCore" />
-    <None Remove="MySql.EntityFrameworkCore" />
-    <None Remove="MySQL.Data.Entities" />
-    <None Remove="MySql.Data" />
-    <None Remove="Pages\CustomerInformation\" />
-  </ItemGroup>
   <ItemGroup>
     <Folder Include="Modals\" />
     <Folder Include="Pages\CustomerInformation\" />
