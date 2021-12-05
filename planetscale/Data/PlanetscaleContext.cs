@@ -6,10 +6,6 @@ using Microsoft.AspNetCore.Http;
 using planetscale.Modals;
 using Microsoft.EntityFrameworkCore;
 using System.Threading;
-using MySql.EntityFrameworkCore;
-using MySql.EntityFrameworkCore.DataAnnotations;
-using MySql.EntityFrameworkCore.Extensions;
-
 namespace Planetscale.Data
 {
     public class PlanetscaleContext : DbContext
